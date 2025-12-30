@@ -4,7 +4,7 @@ fig=plt.figure(figsize=(6,4),facecolor='lightblue')
 x=["a","b","c","d","e","f"]
 y=[2,3,4,56,12,4]
 b=[32,43,2,3,5,6]
-plt.title("bullshit data")
+plt.title("data")
 plt.xlabel("students")
 plt.ylabel("marks")
 #plt.pie(y,labels=x,colors=("red","blue","pink","green","yellow","purple"),explode=(.3,.4,.2,0,0,0),shadow=True,autopct='%1.2f%%')
