@@ -86,20 +86,6 @@ b=float(input("Enter side B: "))
 h=math.sqrt((a**2)+(b**2))
 print(f"Side C: {h} Side A: {a} Side B: {b}")
 
-#Armstrong---------------------------------------------------------------------------
-a=int(input("enter a number: "))
-temp=a
-sum=0
-n=len(str(a))
-while temp>0:
-    d=temp%10
-    sum=sum+(d**n)
-    temp=temp//10
-if sum==a:
-    print(a,"is an armstrong number")
-else:
-    print(a,"is not an armstrong number")
-
 #OPERATORS-------------------------------------------------------------------------
 print("Shreyas Aryan-00521402024")
 a=int(input("Enter Value: "))
@@ -168,9 +154,25 @@ else:
     print("INVALID OPTION!")
 
 #ternary operator-------------------------------------------------------------
-a=int(input("Enter value: "))
-b=int(input("Enter 2nd value: "))
-print("A is greater" if a>b else "B is greater")
+z=int(input("Enter value: "))
+y=int(input("Enter 2nd value: "))
+print("1st Value is greater" if z>y else "2nd Value is greater")
+b=False
+b=int(b)
+a="hello" if b==1 else "no hello"
+print(a)
+num=5
+print("positive" if num>=0 else "negative")
+x=6
+y=7
+print("max x" if x>y else "max y")
+print("min x" if x<y else "min y")
+age=12
+print("kid" if x<18 else "adult")
+temp=48
+print("hot" if temp>20 else "cold")
+user="guest"
+print("full access" if user=="admin" else "limited access")
 
 #break at 10 sum of it--------------------------------------------------------
 n=int(input("Enter value for nothing: "))
