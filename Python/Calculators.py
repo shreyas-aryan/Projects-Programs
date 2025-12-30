@@ -48,3 +48,40 @@ while run:
         run=False
     else:
         print("INVALID OPTION")
+
+#BASIC CALC
+print("Calculator!!")
+print("You can perform: ")
+print("1. Addition")
+print("2. Difference")
+print("3. Multiplication")
+print("4. Division")
+print("5. Exponent")
+print("6. Floor Division")
+n=input("Enter Operator +,-,*,/,** and //: ")
+if n=="+":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} + {b} = {a+b}")
+elif n=="-":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} - {b} = {a-b}")
+elif n=="*":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} * {b} = {a*b}")
+elif n=="/":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} / {b} = {a/b}")
+elif n=="**":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} ** {b} = {a**b}")
+elif n=="//":
+    a=int(input("Enter value of A: "))
+    b=int(input("Enter value of B: "))
+    print(f"{a} // {b} = {a//b}")
+else:
+    print("Invalid Operator")
