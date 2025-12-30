@@ -18,17 +18,25 @@ c2=Employee("Reyas","manager")
 print(Employee.sal)
 print(c2.sal)
 
-#checking username requriments--------------------------------------------------------
-print("Username check!!")
-n=input("Enter your Username: ")
-if len(n)>12:
-    print("Username cant contain more than 12 characters")
-elif not n.isalpha():
-    print("Username shouldnt have numbers")
-elif not n.find(" ")==-1:
-    print("Username cant have spaces")
-else:
-    print(f"Welcome {n}")
+#use of args and kwargs---------------------------------------------------------------
+def a(*args,**kwargs):
+    for i in args:
+        print(i,end=" ")
+    print()
+    if "apt" in kwargs:
+        print(f"{kwargs['street']} {kwargs['apt']}")
+    elif "pobox" in kwargs:
+        print(f"{kwargs['street']} {kwargs['pobox']}")
+    else:
+        print(f"{kwargs['street']}")
+    print(f"{kwargs['city']} {kwargs['country']}")
+
+a("Shreyas","Aryan",47,
+  street="123 Faker",
+  pobox="PO BOX #1001",
+  #apt=100,
+  city="Delhi",
+  country="India")
 
 #fibonacci---------------------------------------------------------------------------
 n=int(input("enter the number of terms: "))
@@ -93,3 +101,15 @@ if sum==a:
     print(a,"is an armstrong number")
 else:
     print(a,"is not an armstrong number")
+
+#checking username requriments--------------------------------------------------------
+print("Username check!!")
+n=input("Enter your Username: ")
+if len(n)>12:
+    print("Username cant contain more than 12 characters")
+elif not n.isalpha():
+    print("Username shouldnt have numbers")
+elif not n.find(" ")==-1:
+    print("Username cant have spaces")
+else:
+    print(f"Welcome {n}")
