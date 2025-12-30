@@ -214,3 +214,17 @@ print("Type of flo1: ",type(flo1)," ",flo1)
 print("Type of bool1: ",type(bool1)," ",bool1)
 bool1=str(bool1)
 print("Type of bool1: ",type(bool1)," ",bool1)
+
+#use of global keyword------------------------------------------------------------
+x=10
+y=20
+def add():
+    c=x+y
+    print(c)
+add()
+def add2():
+    global x,y
+    x+=y
+    print(x)
+add2()
+
