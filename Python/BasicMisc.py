@@ -197,3 +197,18 @@ else:
     else:
         min=c
 print(f"{min} is the Minimum Number")
+
+#type casting-------------------------------------------------------------------
+str1=input("Enter String: ")
+int1=int(input("Enter Integer: "))
+flo1=float(input("Enter Float: "))
+bool1=bool(input("Enter Boolean: "))
+print("Type of int1: ",type(int1)," ",int1)
+int1=str(int1)
+print("Type of int1: ",type(int1)," ",int1)
+print("Type of flo1: ",type(flo1)," ",flo1)
+flo1=int(flo1)
+print("Type of flo1: ",type(flo1)," ",flo1)
+print("Type of bool1: ",type(bool1)," ",bool1)
+bool1=str(bool1)
+print("Type of bool1: ",type(bool1)," ",bool1)
