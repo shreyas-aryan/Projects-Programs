@@ -1,0 +1,18 @@
+import re
+txt="Hello!! Visit https://example.com o1r email me@test.com, call 98765-43210 #excited1"
+url=re.sub(r'http\S+','',txt)
+email=re.sub(r'\S+@\S+','',url)
+no=re.sub(r'\d+','',email)
+sp=re.sub(r'[^a-zA-Z\s]','',no)
+wh=re.sub(r'\s+',' ',sp)
+f=re.findall(r"\S+i\S+",txt)
+f2=re.findall(r"e",txt)
+sr=re.search(r"^H",txt)
+sr2=re.search(r"a",txt)
+sp=re.split(r"\S+a\S+",txt)
+print(sp)
+print(f)
+print(f2)
+print(sr2)
+print(sr)
+print(wh)
